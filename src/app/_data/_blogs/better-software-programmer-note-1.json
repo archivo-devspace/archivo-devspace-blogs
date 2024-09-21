@@ -1,0 +1,76 @@
+{
+  "id": 1,
+  "mainTitle": "Better Software Programmer Note Series",
+  "subTitle": "",
+  "category": {
+    "id": 1,
+    "name": "software development"
+  },
+  "body": [
+    {
+      "type": "h2",
+      "value": "Write Clean, Readable Code"
+    },
+    {
+      "type": "p",
+      "value": "Archivo အနေနဲ့ ထိရောက်ပြီး အကျိုးရှိစေမယ့် အကြောင်းအရာများ ရှာဖွေစဉ်းစားရင်း ရွေးချယ်လိုက်တာကတော့ Better Software Programmer Note Series ပဲ ဖြစ်ပါတယ်။ တခုကြိုပြီး အသိပေးချင်တာက ခေါင်းစဉ်မှာ ဖော်ပြထားတဲ့ အတိုင်း Software Programmer Note Series ပါ။ Software Developer Note Series မဟုတ်ပါ။ ခုလိုမျိုး ခွဲခြားရှင်းပြထားရတဲ့ အကြောင်းကတော့ Developer နဲ့ Programmer နှစ်ခုဟာ ချိတ်ဆက်မှုရှိပေမယ့် တူညီနေတာမျိုး မဟုတ်ပါ။ ငယ်ငယ်က သင်္ချာမှာ သင်ခဲ့ရတဲ့ အစုပိုင်းတွေနဲ့ ချိတ်ဆက်ပြောရမယ်ဆိုရင် Developer ဆိုတာ Superset အစု ဖြစ်ပြီး Programmer ဆိုတာဟာ Subset အစုပိုင်းပါ။ အဲ့အကြောင်းကို သီးသန့် Sharing Blog တခု ရေးပါဦးမယ်။ ခုဆိုလိုချင်တာက Developer တွေကို ဦးတည်မယ့် Wider Area Target Sharing မဟုတ်ဘဲ Narrow Focus To Programmer ကို ရည်ရွယ်ပြီး မျှဝေမှာပါလို့ ပြောချင်တာပါ။ ကဲ စလိုက်ရအောင်…"
+    },
+    {
+      "type": "p",
+      "value": "Programmer တယောက်အနေနဲ့ ခုပြောပြမယ့် အကြောင်းအရာတွေကို သိရှိပြီးလည်း ဖြစ်နေနိုင်ပါတယ်။ သတိမထားမိပေမယ့် မိမိရဲ့ ပုံမှန်အလေ့အကျင့်ဖြစ်ပြီးသားလည်း ဖြစ်နေနိုင်ပါတယ်။ Junior တွေ အနေနဲ့တော့ သတိထားလိုက်နာသင့်တာတွေပဲ ဖြစ်ပါတယ်။"
+    },
+    {
+      "type": "h4",
+      "value": "1. Meaningful Naming Conventions"
+    },
+    {
+      "type": "p",
+      "value": [
+        { "type": "span", "value": "Program Code တွေရေးတဲ့ အခါမှာ " },
+        {
+          "type": "b",
+          "value": "Variables, Functions, Class"
+        },
+        {
+          "type": "span",
+          "value": "  အစရှိတာတွေအတွက် နာမည်သတ်မှတ်တဲ့အခါမှာ အဓိပ္ပါယ်ရှိတဲ့ နာမည်တွေဖြစ်သင့်ပါတယ်။ "
+        },
+        { "type": "i", "value": "ဥပမာပုံစံပြပေးထားပါတယ်။" }
+      ]
+    },
+    {
+      "type": "comparison",
+      "value": [
+        {
+          "type": "negative",
+          "value": "let x = 10;\nfunction a(b, c) {\n  return b * c;\n}"
+        },
+        {
+          "type": "positive",
+          "value": "let itemCount = 10;\nfunction calculateTotalPrice(quantity, pricePerItem) {\n  return quantity * pricePerItem;\n}"
+        }
+      ]
+    },
+    {
+      "type": "h4",
+      "value": "2. Write Small, Focused Functions"
+    },
+    {
+      "type": "p",
+      "value": "Function တခုကို အများကြီး အလုပ်မခိုင်းမိဖို့ သတိထားသင့်ပါတယ်။ ဆိုလိုချင်တာက Function တခုဟာ အလုပ်တာဝန်တခုကို ကျေပွန်စွာ လုပ်နိုင်ပြီဆိုရင် အဲ့ဒီ Function ဟာ ပြည့်စုံနေပါပြီ။ နောက်ထပ်လုပ်ဖို့ လိုအပ်တဲ့ တာဝန်တွေကို နောက်ထပ် အသီးသီးသော Function တွေအဖြစ် ခွဲထုတ်တည်ဆောက်ပါ။ ဥပမာပုံစံပြပေးထားပါတယ်။"
+    },
+    {
+      "type": "comparison",
+      "value": [
+        {
+          "type": "negative",
+          "value": "function processOrder(order) {\n  // Calculate total price\n  let total = 0;\n  order.items.forEach(item => total += item.price * item.quantity);\n  \n  // Apply discount\n  if (order.discountCode) {\n    total = applyDiscount(total, order.discountCode);\n  }\n\n  // Send confirmation email\n  sendEmail(order.email, total);\n  \n  return total;\n}"
+        },
+        {
+          "type": "positive",
+          "value": "function calculateOrderTotal(order) {\n  return order.items.reduce((sum, item) => sum + item.price * item.quantity, 0);\n}\n\nfunction applyOrderDiscount(total, discountCode) {\n  return discountCode ? applyDiscount(total, discountCode) : total;\n}\n\nfunction sendConfirmationEmail(email, total) {\n  sendEmail(email, total);\n}"
+        }
+      ]
+    }
+  ]
+}
