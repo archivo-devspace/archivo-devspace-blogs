@@ -13,7 +13,15 @@
     },
     {
       "type": "p",
-      "value": "Archivo အနေနဲ့ ထိရောက်ပြီး အကျိုးရှိစေမယ့် အကြောင်းအရာများ ရှာဖွေစဉ်းစားရင်း ရွေးချယ်လိုက်တာကတော့ Better Software Programmer Note Series ပဲ ဖြစ်ပါတယ်။ တခုကြိုပြီး အသိပေးချင်တာက ခေါင်းစဉ်မှာ ဖော်ပြထားတဲ့ အတိုင်း Software Programmer Note Series ပါ။ Software Developer Note Series မဟုတ်ပါ။ ခုလိုမျိုး ခွဲခြားရှင်းပြထားရတဲ့ အကြောင်းကတော့ Developer နဲ့ Programmer နှစ်ခုဟာ ချိတ်ဆက်မှုရှိပေမယ့် တူညီနေတာမျိုး မဟုတ်ပါ။ ငယ်ငယ်က သင်္ချာမှာ သင်ခဲ့ရတဲ့ အစုပိုင်းတွေနဲ့ ချိတ်ဆက်ပြောရမယ်ဆိုရင် Developer ဆိုတာ Superset အစု ဖြစ်ပြီး Programmer ဆိုတာဟာ Subset အစုပိုင်းပါ။ အဲ့အကြောင်းကို သီးသန့် Sharing Blog တခု ရေးပါဦးမယ်။ ခုဆိုလိုချင်တာက Developer တွေကို ဦးတည်မယ့် Wider Area Target Sharing မဟုတ်ဘဲ Narrow Focus To Programmer ကို ရည်ရွယ်ပြီး မျှဝေမှာပါလို့ ပြောချင်တာပါ။ ကဲ စလိုက်ရအောင်…"
+      "value": "Archivo အနေနဲ့ ထိရောက်ပြီး အကျိုးရှိစေမယ့် အကြောင်းအရာများ ရှာဖွေစဉ်းစားရင်း ရွေးချယ်လိုက်တာကတော့ Better Software Programmer Note Series ပဲ ဖြစ်ပါတယ်။ တခုကြိုပြီး အသိပေးချင်တာက ခေါင်းစဉ်မှာ ဖော်ပြထားတဲ့ အတိုင်း Software Programmer Note Series ပါ။ Software Developer Note Series မဟုတ်ပါ။"
+    },
+    {
+      "type": "p",
+      "value": "ခုလိုမျိုး ခွဲခြားရှင်းပြထားရတဲ့ အကြောင်းကတော့ Developer နဲ့ Programmer နှစ်ခုဟာ ချိတ်ဆက်မှုရှိပေမယ့် တူညီနေတာမျိုး မဟုတ်ပါ။ ငယ်ငယ်က သင်္ချာမှာ သင်ခဲ့ရတဲ့ အစုပိုင်းတွေနဲ့ ချိတ်ဆက်ပြောရမယ်ဆိုရင် Developer ဆိုတာ Superset အစု ဖြစ်ပြီး Programmer ဆိုတာဟာ Subset အစုပိုင်းပါ။ အဲ့အကြောင်းကို သီးသန့် Sharing Blog တခု ရေးပါဦးမယ်။"
+    },
+     {
+      "type": "p",
+      "value": "ခုဆိုလိုချင်တာက Developer တွေကို ဦးတည်မယ့် Wider Area Target Sharing မဟုတ်ဘဲ Narrow Focus To Programmer ကို ရည်ရွယ်ပြီး မျှဝေမှာပါလို့ ပြောချင်တာပါ။ ကဲ စလိုက်ရအောင်…"
     },
     {
       "type": "p",
@@ -57,7 +65,10 @@
     },
     {
       "type": "p",
-      "value": "Function တခုကို အများကြီး အလုပ်မခိုင်းမိဖို့ သတိထားသင့်ပါတယ်။ ဆိုလိုချင်တာက Function တခုဟာ အလုပ်တာဝန်တခုကို ကျေပွန်စွာ လုပ်နိုင်ပြီဆိုရင် အဲ့ဒီ Function ဟာ ပြည့်စုံနေပါပြီ။ နောက်ထပ်လုပ်ဖို့ လိုအပ်တဲ့ တာဝန်တွေကို နောက်ထပ် အသီးသီးသော Function တွေအဖြစ် ခွဲထုတ်တည်ဆောက်ပါ။ ဥပမာပုံစံပြပေးထားပါတယ်။"
+      "value": [
+         { "type": "span", "value": "Function တခုကို အများကြီး အလုပ်မခိုင်းမိဖို့ သတိထားသင့်ပါတယ်။ ဆိုလိုချင်တာက Function တခုဟာ အလုပ်တာဝန်တခုကို ကျေပွန်စွာ လုပ်နိုင်ပြီဆိုရင် အဲ့ဒီ Function ဟာ ပြည့်စုံနေပါပြီ။ နောက်ထပ်လုပ်ဖို့ လိုအပ်တဲ့ တာဝန်တွေကို နောက်ထပ် အသီးသီးသော Function တွေအဖြစ် ခွဲထုတ်တည်ဆောက်ပါ။" },
+         { "type": "i", "value": " ဥပမာပုံစံပြပေးထားပါတယ်။" }
+      ]
     },
     {
       "type": "comparison",
@@ -71,6 +82,41 @@
           "value": "function calculateOrderTotal(order) {\n  return order.items.reduce((sum, item) => sum + item.price * item.quantity, 0);\n}\n\nfunction applyOrderDiscount(total, discountCode) {\n  return discountCode ? applyDiscount(total, discountCode) : total;\n}\n\nfunction sendConfirmationEmail(email, total) {\n  sendEmail(email, total);\n}"
         }
       ]
+    },
+    {
+      "type": "h4",
+      "value": "3.Avoid Magic Numbers"
+    },
+    {
+      "type": "p",
+      "value": [
+        {
+          "type" : "span",
+          "value" : "Program Code တွေရေးတဲ့ အခါမှာ Business Logic အတွက် အသုံးပြုမယ့် ကိန်းသေတွေကို Hard Code Value တွေဖြင့် မရေးသင့်ပါ။ အဲ့လိုရေးသားထားမယ်ဆိုရင် ရေးသားသူကိုယ်တိုင်ပဲ နားလည်နေပါလိမ့်မယ်။ ရေးသားသူကိုယ်တိုင်တောင် အချိန် ခဏတာပဲ မှတ်မိမှာပါ။ ပြုပြင်ထိန်းသိမ်းရလည်း ခက်ခဲပါတယ်။ ဒီလိုမျိုးကို ကြိုတင်ရှောင်ရှားထားရပါမယ်။"
+        },
+        {
+          "type": "i",
+          "value" : [
+            {"type" : "b", "value" : [
+              {"type": "u", "value" : " ဥပမာပုံစံပြပေးထားပါတယ်။"}
+            ]}
+          ]
+        }
+      ]
+    },
+     {
+      "type": "comparison",
+      "value": [
+        {
+          "type": "negative",
+          "value": "let discount = total * 0.1;"
+        },
+        {
+          "type": "positive",
+          "value": "const DISCOUNT_RATE = 0.1;\nlet discount = total * DISCOUNT_RATE;"
+        }
+      ]
     }
+
   ]
 }

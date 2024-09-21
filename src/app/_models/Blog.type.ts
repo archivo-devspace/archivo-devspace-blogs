@@ -9,6 +9,7 @@ export type BlogBodyType =
   | "p"
   | "b"
   | "i"
+  | "u"
   | "span"
   | "comparison"
   | "negative"

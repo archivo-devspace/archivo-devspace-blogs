@@ -21,36 +21,50 @@ export default function Home() {
     return obj;
   };
 
+  const getBlogBodyHelper = (
+    type: BlogBodyType,
+    value: string | BlogBody[]
+  ) => {
+    return Array.isArray(value) ? (
+      <>
+        {type === "comparison" ? (
+          <Comparison {...getComparison(value)} />
+        ) : (
+          value.map((v) => getBlogBody(v.type, v.value))
+        )}
+      </>
+    ) : (
+      <>{value}</>
+    );
+  };
+
   const getBlogBody = (
     type: BlogBodyType,
     value: string | BlogBody[]
   ): React.ReactElement => {
     return (
       <>
-        {typeof value === "string" && (
-          <>
-            {type === "h2" && (
-              <h2 className="text-xl font-bold my-4">{value}</h2>
-            )}
-
-            {type === "h4" && <h4 className="font-bold my-4">{value}</h4>}
-
-            {type === "p" && <p>{value}</p>}
-
-            {type === "span" && <span>{value}</span>}
-
-            {type === "b" && <b>{value}</b>}
-
-            {type === "i" && <i>{value}</i>}
-          </>
+        {type === "h2" && (
+          <h2 className="text-xl font-bold my-4">
+            {getBlogBodyHelper(type, value)}
+          </h2>
         )}
 
-        {Array.isArray(value) &&
-          (type === "comparison" ? (
-            <Comparison {...getComparison(value)} />
-          ) : (
-            value.map((v) => getBlogBody(v.type, v.value))
-          ))}
+        {type === "h4" && (
+          <h4 className="font-bold my-4">{getBlogBodyHelper(type, value)}</h4>
+        )}
+
+        {type === "p" && <p>{getBlogBodyHelper(type, value)}</p>}
+
+        {type === "span" && <span>{getBlogBodyHelper(type, value)}</span>}
+
+        {type === "b" && <b>{getBlogBodyHelper(type, value)}</b>}
+
+        {type === "i" && <i>{getBlogBodyHelper(type, value)}</i>}
+
+        {type === "u" && <u>{getBlogBodyHelper(type, value)}</u>}
+
+        {type === "comparison" && <>{getBlogBodyHelper(type, value)}</>}
       </>
     );
   };
