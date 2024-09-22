@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath:
-    "/archivo-devspace-knowledge-sharing/blogs/detail/better-software-programmer-series",
+  images: {
+    unoptimized: true,
+  },
+  basePath: "/archivo-devspace-blogs",
 };
 
 export default nextConfig;
