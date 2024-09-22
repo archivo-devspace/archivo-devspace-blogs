@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Main from "./main";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 
 // Use the Google Font (Archivo)
 const archivo = Archivo({
@@ -28,7 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${walone.variable} ${archivo.variable}`}>
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>
+          <Main>{children}</Main>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

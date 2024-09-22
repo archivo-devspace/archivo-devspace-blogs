@@ -84,7 +84,11 @@ export default function Home() {
           </u>
         )}
 
-        {type === "comparison" && <>{getBlogBodyHelper(type, value)}</>}
+        {type === "comparison" && (
+          <div className="bg-tertiaryColor shadow-md">
+            {getBlogBodyHelper(type, value)}
+          </div>
+        )}
       </div>
     );
   };
