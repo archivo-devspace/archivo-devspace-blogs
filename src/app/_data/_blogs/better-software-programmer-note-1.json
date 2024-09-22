@@ -1,8 +1,9 @@
 {
   "id": 1,
-  "mainTitle": "Better Software Programmer Note Series",
+  "mainTitle": "Write Clean, Readable Code",
+  "headTitle": "Better Software Programmer Note Series",
   "subTitle": "",
-  "coverPhoto": "/new.svg",
+  "coverPhoto": "/cover.svg",
   "category": {
     "id": 1,
     "name": "software development"
@@ -10,10 +11,7 @@
   "createdDate": "Sep 16",
   "readTime" : "3",
   "body": [
-    {
-      "type": "h2",
-      "value": "Write Clean, Readable Code"
-    },
+    
     {
       "type": "p",
       "value": "Archivo အနေနဲ့ ထိရောက်ပြီး အကျိုးရှိစေမယ့် အကြောင်းအရာများ ရှာဖွေစဉ်းစားရင်း ရွေးချယ်လိုက်တာကတော့ Better Software Programmer Note Series ပဲ ဖြစ်ပါတယ်။ တခုကြိုပြီး အသိပေးချင်တာက ခေါင်းစဉ်မှာ ဖော်ပြထားတဲ့ အတိုင်း Software Programmer Note Series ပါ။ Software Developer Note Series မဟုတ်ပါ။"
@@ -208,14 +206,6 @@
     {
       "type": "p",
       "value": "နောက်ထပ် မျှဝေပေးဦးမယ့် အကြောင်းအရာများ ဆက်လက်ဖတ်ရှုဖို့အတွက်လည်း Archivo DevSpace Page ကို Like and Follow လုပ်သွားကြပါဦးလို့ တိုက်တွန်းရင်း အားလုံးကို ကျေးဇူးတင်ပါတယ်။"
-    },
-    {
-      "type": "p",
-      "value": "#ArchivoDevSpace"
-    },
-    {
-      "type": "p",
-      "value": "#KnowledgeSharing"
     }
   ]
 }

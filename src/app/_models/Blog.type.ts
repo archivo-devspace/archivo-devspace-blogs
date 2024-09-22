@@ -24,6 +24,7 @@ export interface BlogBody {
 export interface Blog {
   id: number;
   mainTitle: string;
+  headTitle: string;
   subTitle: string;
   coverPhoto: string;
   createdDate: string;

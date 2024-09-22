@@ -6,8 +6,9 @@ import ComparisonProps from "@/app/_components/_commons/_blog/Comparison/index.t
 import data from "@/app/_data/_blogs/better-software-programmer-note-1.json";
 import Image from "next/image";
 import "./globals.css";
-import React from "react";
+import React, { Fragment } from "react";
 import Icon, { IconState } from "@/components/utils/Icon";
+import Link from "next/link";
 
 export default function Home() {
   const blog: Blog = data as Blog;
@@ -42,7 +43,11 @@ export default function Home() {
         {type === "comparison" ? (
           <Comparison {...getComparison(value)} />
         ) : (
-          value.map((v) => getBlogBody(v.type, v.value))
+          value.map((v, index) => (
+            <React.Fragment key={index}>
+              {getBlogBody(v.type, v.value)}
+            </React.Fragment>
+          ))
         )}
       </>
     ) : (
@@ -57,45 +62,45 @@ export default function Home() {
     return (
       <div>
         {type === "h2" && (
-          <h2 className="h2Text font-archivo flex justify-center py-4">
+          <h2 className="h2Text font-walone flex justify-center ">
             {getBlogBodyHelper(type, value)}
           </h2>
         )}
 
         {type === "h4" && (
-          <h4 className="h4Text font-archivo py-2 mt-6">
+          <h4 className="h4Text font-walone py-2 mt-6">
             {getBlogBodyHelper(type, value)}
           </h4>
         )}
 
         {type === "p" && (
-          <p className="text-md py-2 text-justify">
+          <div className="text-md py-2 text-justify font-walone">
             {getBlogBodyHelper(type, value)}
-          </p>
+          </div>
         )}
 
         {type === "span" && (
-          <span className="font-archivo text-md">
+          <span className="font-walone text-md">
             {getBlogBodyHelper(type, value)}
           </span>
         )}
 
         {type === "b" && (
-          <b className="font-archivo">{getBlogBodyHelper(type, value)}</b>
+          <b className="font-walone">{getBlogBodyHelper(type, value)}</b>
         )}
 
         {type === "i" && (
-          <i className="font-archivo">{getBlogBodyHelper(type, value)}</i>
+          <i className="font-walone">{getBlogBodyHelper(type, value)}</i>
         )}
 
         {type === "u" && (
-          <u className="font-archivo text-sm">
+          <u className="font-walone text-sm">
             {getBlogBodyHelper(type, value)}
           </u>
         )}
 
         {type === "comparison" && (
-          <div className="bg-tertiaryColor shadow-md mb-5">
+          <div className="bg-tertiaryColor font-walone shadow-md mb-5">
             {getBlogBodyHelper(type, value)}
           </div>
         )}
@@ -105,10 +110,21 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex flex-col px-[10px] md:px-[130px] min-w-[24rem] pt-[120px] bg-tertiaryColor min-h-screen gap-[50px]">
+      <div className="flex sticky top-0 items-center  -mt-20 justify-between bg-tertiaryColor h-20 p-5 w-full shadow-md md:pl-20 min-w-[24rem] font-archivo z-50">
         <div>
-          <p className="font-archivo text-md flex justify-start">
-            Blogs / Detail / Clean_Code
+          <Image src={"/logo.png"} alt={""} width={167} height={35} />
+        </div>
+
+        <div className="flex text-primaryTextColor pr-[10px] sm:pr-20 h-20 pt-6">
+          <Link href={"#"} className="font-archivo">
+            Blogs
+          </Link>
+        </div>
+      </div>
+      <main className="flex flex-col px-[10px] md:px-[130px] min-w-[24rem] pt-[120px] bg-tertiaryColor min-h-screen gap-[30px]">
+        <div>
+          <p className="font-archivo text-md flex justify-start text-secondaryTextColor">
+            {` Blogs / Detail / ${blog.headTitle}`}
           </p>
         </div>
         {blog.mainTitle && (
@@ -126,7 +142,7 @@ export default function Home() {
       )} */}
 
         {blog?.coverPhoto && (
-          <div className="mb-5 w-full min-w-[24rem] px-[10px] h-[519px] self-center">
+          <div className="mb-5 w-full min-w-[24rem] px-[10px]  self-center">
             <Image
               src={blog.coverPhoto}
               alt={"name"}
@@ -139,7 +155,7 @@ export default function Home() {
           </div>
         )}
 
-        <div className="flex flex-wrap gap-2 justify-between w-full">
+        <div className="flex flex-wrap gap-2 justify-between px-4 w-full">
           <div className="flex gap-1 font-archivo heroText text-secondaryTextColor opacity-70">
             <p className="">{blog.createdDate}</p>
             <span>•</span>
@@ -150,7 +166,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="p-4 border-b-2 text-justify leading-6">
+        <div className="px-4 pb-4 border-b-2 leading-6">
           {blog.body.map(({ type, value }, index) => (
             <React.Fragment key={index}>
               {getBlogBody(type, value)}
@@ -158,14 +174,18 @@ export default function Home() {
           ))}
         </div>
       </main>
-      <div className="flex justify-center min-w-[24rem] max-sm:px-[20px] items-center h-[400px] bg-primaryColor text-tertiaryColor font-archivo">
-        <div className="flex flex-col gap-[50px] w-[570px] items-center">
+      <div className="flex justify-center min-w-[24rem] max-sm:px-[20px] items-center py-10 bg-primaryColor text-tertiaryColor font-archivo">
+        <div className="flex flex-col gap-[50px] w-[90%] items-center">
           <h1 className="text-xl  text-center">Subscribe to our Newsletter</h1>
-          <p className="text-sm text-center">
-            Lorem ipsum dolor sit amet consectetur. In aliquet egestas in velit.
-            Sed adipiscing non sagittis egestas .Lorem ipsum dolor sit amet
-            consectetur. In aliquet egestas in velit. Sed adipiscing non
-            sagittis egesta
+          <p className="text-sm md:text-justify text-center font-walone">
+            ဒီ website ရဲ့ ရည်ရွယ်ချက်ကတော့ Web Technology နဲ့ ပတ်သတ်ပြီး
+            စာတွေ့ရော ၊ လက်တွေ့ရော မျှဝေပေးဖို့ဖြစ်ပါတယ်။ မျှဝေတဲ့အခါ
+            စာတွေ့ချည်း မဟုတ်ဘဲ လက်တွေ့လုပ်ငန်းခွင်မှာ ကြုံတွေ့ရနိုင်တဲ့ ၊
+            ကြုံတွေ့ရလေ့ရှိတဲ့ အခက်အခဲ အတွေ့အကြုံများကို အဓိကထား
+            မျှဝေပေးသွားမှာပါ။ ကောင်းမွန်ပြီး
+            အရည်အသွေးပြည့်ဝတဲ့ဝန်ဆောင်မှုများပေးနိုင်ဖို့ကိုလဲ ကျွန်တော်တို့
+            ARCHIVO DevSpace မှကြိုးစားပြင်ဆင်ထားပါတယ်ဗျ။ ခေတ်အမြင်လဲမနှေး ၊
+            သစ်လွင်တဲ့အတွေးတွေ နဲ့ ကျွန်တော်တို့ရဲ့ Archivo DevSpace လာပါပြီဗျာ။
           </p>
           <div className="flex sm:gap-[50px] gap-[30px]">
             <Icon
