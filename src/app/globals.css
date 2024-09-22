@@ -2,12 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --primary-color: "#3162ff";
+  --secondary-color: "#2f343a";
+  --tertiary-color: "#ffffff";
+  --primaryText-color: "#3162ff";
+  --secondaryText-color: "#2f343a";
+  --tertiaryText-color: "#ffffff";
+  --success-color: "#00C88C";
+  --warnning-color: "#8000C8";
+  --danger-color: "#C8001A";
+  --gray-color: "#90949c";
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+body {
+  background: var(--tertiary-color);
+}
+
+.heroText {
+  @apply text-sm;
+}
+.h2Text {
+  @apply text-lg;
+}
+
+.h4Text {
+  @apply text-md_bold;
+}
+
+@media (min-width: 430px) {
+  .heroText {
+    @apply text-md;
+  }
+  .h2Text {
+    @apply text-xl;
+  }
+  .h4Text {
+    @apply text-lg;
   }
 }

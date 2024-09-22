@@ -2,10 +2,13 @@
   "id": 1,
   "mainTitle": "Better Software Programmer Note Series",
   "subTitle": "",
+  "coverPhoto": "/new.svg",
   "category": {
     "id": 1,
     "name": "software development"
   },
+  "createdDate": "Sep 16",
+  "readTime" : "3",
   "body": [
     {
       "type": "h2",
@@ -19,7 +22,7 @@
       "type": "p",
       "value": "ခုလိုမျိုး ခွဲခြားရှင်းပြထားရတဲ့ အကြောင်းကတော့ Developer နဲ့ Programmer နှစ်ခုဟာ ချိတ်ဆက်မှုရှိပေမယ့် တူညီနေတာမျိုး မဟုတ်ပါ။ ငယ်ငယ်က သင်္ချာမှာ သင်ခဲ့ရတဲ့ အစုပိုင်းတွေနဲ့ ချိတ်ဆက်ပြောရမယ်ဆိုရင် Developer ဆိုတာ Superset အစု ဖြစ်ပြီး Programmer ဆိုတာဟာ Subset အစုပိုင်းပါ။ အဲ့အကြောင်းကို သီးသန့် Sharing Blog တခု ရေးပါဦးမယ်။"
     },
-     {
+    {
       "type": "p",
       "value": "ခုဆိုလိုချင်တာက Developer တွေကို ဦးတည်မယ့် Wider Area Target Sharing မဟုတ်ဘဲ Narrow Focus To Programmer ကို ရည်ရွယ်ပြီး မျှဝေမှာပါလို့ ပြောချင်တာပါ။ ကဲ စလိုက်ရအောင်…"
     },
@@ -34,15 +37,7 @@
     {
       "type": "p",
       "value": [
-        { "type": "span", "value": "Program Code တွေရေးတဲ့ အခါမှာ " },
-        {
-          "type": "b",
-          "value": "Variables, Functions, Class"
-        },
-        {
-          "type": "span",
-          "value": "  အစရှိတာတွေအတွက် နာမည်သတ်မှတ်တဲ့အခါမှာ အဓိပ္ပါယ်ရှိတဲ့ နာမည်တွေဖြစ်သင့်ပါတယ်။ "
-        },
+        { "type": "span", "value": "Program Code တွေရေးတဲ့ အခါမှာ Variables, Functions, Class အစရှိတာတွေအတွက် နာမည်သတ်မှတ်တဲ့အခါမှာ အဓိပ္ပါယ်ရှိတဲ့ နာမည်တွေဖြစ်သင့်ပါတယ်။" },
         { "type": "i", "value": "ဥပမာပုံစံပြပေးထားပါတယ်။" }
       ]
     },
@@ -66,8 +61,11 @@
     {
       "type": "p",
       "value": [
-         { "type": "span", "value": "Function တခုကို အများကြီး အလုပ်မခိုင်းမိဖို့ သတိထားသင့်ပါတယ်။ ဆိုလိုချင်တာက Function တခုဟာ အလုပ်တာဝန်တခုကို ကျေပွန်စွာ လုပ်နိုင်ပြီဆိုရင် အဲ့ဒီ Function ဟာ ပြည့်စုံနေပါပြီ။ နောက်ထပ်လုပ်ဖို့ လိုအပ်တဲ့ တာဝန်တွေကို နောက်ထပ် အသီးသီးသော Function တွေအဖြစ် ခွဲထုတ်တည်ဆောက်ပါ။" },
-         { "type": "i", "value": " ဥပမာပုံစံပြပေးထားပါတယ်။" }
+        {
+          "type": "span",
+          "value": "Function တခုကို အများကြီး အလုပ်မခိုင်းမိဖို့ သတိထားသင့်ပါတယ်။ ဆိုလိုချင်တာက Function တခုဟာ အလုပ်တာဝန်တခုကို ကျေပွန်စွာ လုပ်နိုင်ပြီဆိုရင် အဲ့ဒီ Function ဟာ ပြည့်စုံနေပါပြီ။ နောက်ထပ်လုပ်ဖို့ လိုအပ်တဲ့ တာဝန်တွေကို နောက်ထပ် အသီးသီးသော Function တွေအဖြစ် ခွဲထုတ်တည်ဆောက်ပါ။"
+        },
+        { "type": "i", "value": " ဥပမာပုံစံပြပေးထားပါတယ်။" }
       ]
     },
     {
@@ -91,20 +89,16 @@
       "type": "p",
       "value": [
         {
-          "type" : "span",
-          "value" : "Program Code တွေရေးတဲ့ အခါမှာ Business Logic အတွက် အသုံးပြုမယ့် ကိန်းသေတွေကို Hard Code Value တွေဖြင့် မရေးသင့်ပါ။ အဲ့လိုရေးသားထားမယ်ဆိုရင် ရေးသားသူကိုယ်တိုင်ပဲ နားလည်နေပါလိမ့်မယ်။ ရေးသားသူကိုယ်တိုင်တောင် အချိန် ခဏတာပဲ မှတ်မိမှာပါ။ ပြုပြင်ထိန်းသိမ်းရလည်း ခက်ခဲပါတယ်။ ဒီလိုမျိုးကို ကြိုတင်ရှောင်ရှားထားရပါမယ်။"
+          "type": "span",
+          "value": "Program Code တွေရေးတဲ့ အခါမှာ Business Logic အတွက် အသုံးပြုမယ့် ကိန်းသေတွေကို Hard Code Value တွေဖြင့် မရေးသင့်ပါ။ အဲ့လိုရေးသားထားမယ်ဆိုရင် ရေးသားသူကိုယ်တိုင်ပဲ နားလည်နေပါလိမ့်မယ်။ ရေးသားသူကိုယ်တိုင်တောင် အချိန် ခဏတာပဲ မှတ်မိမှာပါ။ ပြုပြင်ထိန်းသိမ်းရလည်း ခက်ခဲပါတယ်။ ဒီလိုမျိုးကို ကြိုတင်ရှောင်ရှားထားရပါမယ်။"
         },
         {
           "type": "i",
-          "value" : [
-            {"type" : "b", "value" : [
-              {"type": "u", "value" : " ဥပမာပုံစံပြပေးထားပါတယ်။"}
-            ]}
-          ]
+          "value": " ဥပမာပုံစံပြပေးထားပါတယ်။"
         }
       ]
     },
-     {
+    {
       "type": "comparison",
       "value": [
         {
@@ -116,7 +110,112 @@
           "value": "const DISCOUNT_RATE = 0.1;\nlet discount = total * DISCOUNT_RATE;"
         }
       ]
+    },
+    {
+      "type": "h4",
+      "value": "4. Comment Wisely"
+    },
+    {
+      "type": "p",
+      "value": [
+        {
+          "type": "span",
+          "value": "Junior တွေအနေနဲ့ မှားလေ့မှားထရှိတာမျိုးပါ။ အဲ့ဒါကတော့ နေရာတိုင်း Comment တွေလိုက်ရေးပေးထားတာပါ။ စေတနာ အမှားလည်း ဖြစ်နိုင်ပါတယ်။ Senior Programmer က Comment ရေးတာ Best Practice လို့ ပြောပြမိတာကို နားလည်မှု လွဲသွားတာမျိုးကြောင့်လည်း ဖြစ်တတ်ပါတယ်။ တကယ်ဖြစ်သင့်တာကတော့ လိုအပ်မှသာ Comment ရေးသင့်ပါတယ်။ ရေးတဲ့အခါမှာလည်း ထိထိရောက်ရောက် အကျိုးရှိစွာပဲ ရေးသင့်ပါတယ်။"
+        },
+        {
+          "type": "i",
+          "value": " ဥပမာပုံစံပြပေးထားပါတယ်။"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "value": [
+        {
+          "type": "negative",
+          "value": "// Loop through items and print names\nitems.forEach(item => {\n  console.log(item.name);\n});"
+        },
+        {
+          "type": "positive",
+          "value": "// Items are sorted alphabetically, so the loop prints names in order.\nitems.forEach(item => {\n  console.log(item.name);\n});"
+        }
+      ]
+    },
+    {
+      "type": "h4",
+      "value": "5. Be Consistent With Formatting"
+    },
+    {
+      "type": "p",
+      "value": [
+        {
+          "type": "span",
+          "value": "ဒါကတော့ မှားလေ့ရှိတယ်ဆိုတာထက် မိမိ ရေးသားတဲ့ Program Code တွေကို ဖတ်ရှုရ ကောင်းမွန်ပြီး နားလည်လွယ်နိုင်အောင် အထောက်အကူ ပြုနိုင်တဲ့ အချက်ပါ။ Program Code တွေကို Format ချတဲ့ အလေ့အကျင့် ရှိပါစေ။"
+        },
+        {
+          "type": "i",
+          "value": " ဥပမာပုံစံပြပေးထားပါတယ်။"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "value": [
+        {
+          "type": "negative",
+          "value": "function processOrder(order) {\n\n  let total = order.items.reduce((sum, item) => sum + item.price * item.quantity, 0);\n\n  return total;\n}"
+        },
+        {
+          "type": "positive",
+          "value": "function processOrder(order) {\n  let total = order.items.reduce((sum, item) => sum + item.price * item.quantity, 0);\n  return total;\n}"
+        }
+      ]
+    },
+    {
+      "type": "h4",
+      "value": "6. Avoid Deep Nesting"
+    },
+    {
+      "type": "p",
+      "value": [
+        {
+          "type": "span",
+          "value": "ဒါကလည်း ကောင်းမွန်တဲ့ Program Code တွေ ရေးနိုင်ဖို့ သတိထားရမယ့် အချက်ပါပဲ။ Program Code တွေကို ရေးတဲ့အခါ အထပ်ထပ် အဆင့်ဆင့် ဖြစ်နေတာက ဖတ်ရှုရ ၊ နားလည်ရ ၊ ပြုပြင်ရ ခက်စေပါတယ်။ ဒါကြောင့်မို့ ဒီအချက်ကိုလည်း သတိထားသင့်ပါတယ်။"
+        },
+        {
+          "type": "i",
+          "value": " ဥပမာပုံစံပြပေးထားပါတယ်။"
+        }
+      ]
+    },
+    {
+      "type": "comparison",
+      "value": [
+        {
+          "type": "negative",
+          "value": "function processItems(items) {\n  if (items && items.length > 0) {\n    items.forEach(item => {\n      if (item.isActive) {\n        console.log(item.name);\n      }\n    });\n  }\n}"
+        },
+        {
+          "type": "positive",
+          "value": "function processItems(items) {\n  if (!items || items.length === 0) return;\n  \n  items.forEach(item => {\n    if (item.isActive) {\n      console.log(item.name);\n    }\n  });\n}"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "value": "ခုတင်ပြခဲ့တာတွေကတော့ “Better Software Programmer” ဖြစ်လာစေမယ့် အချက်တွေထဲက “Write Clean and Readable Code” အကြောင်းကို မျှဝေပေးခဲ့တာပါ။ ခုမျှဝေပေးခဲ့တဲ့ အချက်များကို လိုက်နာကျင့်သုံးခြင်းဖြင့် Better Software Programmer များ ဖြစ်လာပါစေလို့ ဆန္ဒပြုရင်း နိဂုံးချုပ်ပါရစေ။"
+    },
+    {
+      "type": "p",
+      "value": "နောက်ထပ် မျှဝေပေးဦးမယ့် အကြောင်းအရာများ ဆက်လက်ဖတ်ရှုဖို့အတွက်လည်း Archivo DevSpace Page ကို Like and Follow လုပ်သွားကြပါဦးလို့ တိုက်တွန်းရင်း အားလုံးကို ကျေးဇူးတင်ပါတယ်။"
+    },
+    {
+      "type": "p",
+      "value": "#ArchivoDevSpace"
+    },
+    {
+      "type": "p",
+      "value": "#KnowledgeSharing"
     }
-
   ]
 }
