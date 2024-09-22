@@ -3,15 +3,14 @@
   "mainTitle": "Write Clean, Readable Code",
   "headTitle": "Better Software Programmer Note Series",
   "subTitle": "",
-  "coverPhoto": "/cover.svg",
+  "coverPhoto": "bspnote.jpg",
   "category": {
     "id": 1,
     "name": "software development"
   },
   "createdDate": "Sep 16",
-  "readTime" : "3",
+  "readTime": "3",
   "body": [
-    
     {
       "type": "p",
       "value": "Archivo အနေနဲ့ ထိရောက်ပြီး အကျိုးရှိစေမယ့် အကြောင်းအရာများ ရှာဖွေစဉ်းစားရင်း ရွေးချယ်လိုက်တာကတော့ Better Software Programmer Note Series ပဲ ဖြစ်ပါတယ်။ တခုကြိုပြီး အသိပေးချင်တာက ခေါင်းစဉ်မှာ ဖော်ပြထားတဲ့ အတိုင်း Software Programmer Note Series ပါ။ Software Developer Note Series မဟုတ်ပါ။"
@@ -35,7 +34,10 @@
     {
       "type": "p",
       "value": [
-        { "type": "span", "value": "Program Code တွေရေးတဲ့ အခါမှာ Variables, Functions, Class အစရှိတာတွေအတွက် နာမည်သတ်မှတ်တဲ့အခါမှာ အဓိပ္ပါယ်ရှိတဲ့ နာမည်တွေဖြစ်သင့်ပါတယ်။" },
+        {
+          "type": "span",
+          "value": "Program Code တွေရေးတဲ့ အခါမှာ Variables, Functions, Class အစရှိတာတွေအတွက် နာမည်သတ်မှတ်တဲ့အခါမှာ အဓိပ္ပါယ်ရှိတဲ့ နာမည်တွေဖြစ်သင့်ပါတယ်။"
+        },
         { "type": "i", "value": "ဥပမာပုံစံပြပေးထားပါတယ်။" }
       ]
     },
@@ -161,7 +163,7 @@
       "value": [
         {
           "type": "negative",
-          "value": "function processOrder(order) {\n\n  let total = order.items.reduce((sum, item) => sum + item.price * item.quantity, 0);\n\n  return total;\n}"
+          "value": "function processOrder(order) {\n\n  let total = order.items.reduce((sum, item) => sum + item.price * item.quantity, 0);\n\n\n \t\t return total;\n}"
         },
         {
           "type": "positive",

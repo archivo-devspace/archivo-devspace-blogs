@@ -9,6 +9,7 @@ import "./globals.css";
 import React, { Fragment } from "react";
 import Icon, { IconState } from "@/components/utils/Icon";
 import Link from "next/link";
+import { getPublicLocalMedia } from "@/utils/file";
 
 export default function Home() {
   const blog: Blog = data as Blog;
@@ -112,7 +113,12 @@ export default function Home() {
     <>
       <div className="flex sticky top-0 items-center  -mt-20 justify-between bg-tertiaryColor h-20 p-5 w-full shadow-md md:pl-20 min-w-[24rem] font-archivo z-50">
         <div>
-          <Image src={"/logo.png"} alt={""} width={167} height={35} />
+          <Image
+            src={getPublicLocalMedia("logo.png")}
+            alt={""}
+            width={167}
+            height={35}
+          />
         </div>
 
         <div className="flex text-primaryTextColor pr-[10px] sm:pr-20 h-20 pt-6">
@@ -144,7 +150,7 @@ export default function Home() {
         {blog?.coverPhoto && (
           <div className="mb-5 w-full min-w-[24rem] px-[10px]  self-center">
             <Image
-              src={blog.coverPhoto}
+              src={getPublicLocalMedia(blog.coverPhoto)}
               alt={"name"}
               width={0}
               height={0}

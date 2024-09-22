@@ -1,5 +1,6 @@
 /* eslint-disable */
 "use client";
+import { getPublicLocalMedia } from "@/utils/file";
 import Image from "next/image";
 import React from "react";
 
@@ -28,7 +29,7 @@ const Icon = ({ name, onClick, style }: IconProps) => {
           height={24}
           alt={name}
           className={style}
-          src={"/Facebook.svg"}
+          src={getPublicLocalMedia("Facebook.svg")}
         />
       );
     case IconState.Instagram:
@@ -39,7 +40,7 @@ const Icon = ({ name, onClick, style }: IconProps) => {
           height={24}
           alt={name}
           className={style}
-          src={"/Instagram.svg"}
+          src={getPublicLocalMedia("Instagram.svg")}
         />
       );
     case IconState.LinkIn:
@@ -50,7 +51,7 @@ const Icon = ({ name, onClick, style }: IconProps) => {
           height={24}
           alt={name}
           className={style}
-          src={"/Linkin.svg"}
+          src={getPublicLocalMedia("Linkin.svg")}
         />
       );
     case IconState.Twitter:
@@ -61,7 +62,7 @@ const Icon = ({ name, onClick, style }: IconProps) => {
           height={24}
           alt={name}
           className={style}
-          src={"/Twitter.svg"}
+          src={getPublicLocalMedia("Twitter.svg")}
         />
       );
     case IconState.YouTube:
@@ -72,7 +73,7 @@ const Icon = ({ name, onClick, style }: IconProps) => {
           height={24}
           alt={name}
           className={style}
-          src={"/YouTube.svg"}
+          src={getPublicLocalMedia("YouTube.svg")}
         />
       );
   }
