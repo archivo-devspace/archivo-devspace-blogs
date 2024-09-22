@@ -5,7 +5,7 @@
 name: Deploy Next.js site to Pages
 
 env:
-  NEXT_PUBLIC_API_URL: 'archivo-devspace-blogs'
+  NEXT_PUBLIC_BASE_PATH: 'archivo-devspace-blogs'
 
 on:
   # Runs on pushes targeting the default branch
@@ -78,7 +78,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         env:
-          NEXT_PUBLIC_API_URL: 'archivo-devspace-blogs'
+          NEXT_PUBLIC_BASE_PATH: 'archivo-devspace-blogs'
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
