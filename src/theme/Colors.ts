@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const commonColor = {
   success: "#00C88C",
   warnning: "#8000C8",

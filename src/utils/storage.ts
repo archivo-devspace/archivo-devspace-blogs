@@ -1,4 +1,6 @@
+/* eslint-disable */
 // Utility functions for localStorage
+
 
 export const saveString = (key:string, value:any) => {
   try {

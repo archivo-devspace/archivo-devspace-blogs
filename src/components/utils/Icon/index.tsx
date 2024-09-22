@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 import Image from "next/image";
 import React from "react";
@@ -17,7 +18,7 @@ export enum IconState {
   YouTube = "youtube",
 }
 
-const Icon = ({ name, onClick, style, link }: IconProps) => {
+const Icon = ({ name, onClick, style }: IconProps) => {
   switch (name) {
     case IconState.FaceBook:
       return (

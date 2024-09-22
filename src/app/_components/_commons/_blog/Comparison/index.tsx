@@ -13,7 +13,7 @@ function Comparison({ positive, negative }: Props) {
     <>
       <div className="p-4  flex flex-col gap-4">
         <span className="font-archivo text-md_bold text-dangerColor">
-          Don't
+          {"Don't"}
         </span>
         <SyntaxHighlighter language="javascript" style={atelierPlateauLight}>
           {negative}
@@ -22,7 +22,7 @@ function Comparison({ positive, negative }: Props) {
 
       <div className="p-4 flex flex-col gap-4">
         <span className="font-archivo text-md_bold text-primaryTextColor">
-          Do
+          {"Do"}
         </span>
         <SyntaxHighlighter language="javascript" style={darcula}>
           {positive}
