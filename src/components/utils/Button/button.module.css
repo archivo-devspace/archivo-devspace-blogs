@@ -1,0 +1,35 @@
+.btn {
+  @apply truncate text-tertiaryTextColor font-bold text-sm hover:bg-opacity-90  shadow-sm py-2 px-2 rounded-lg;
+}
+
+.primary {
+  @apply bg-primaryColor hover:text-grayColor;
+}
+
+.danger {
+  @apply bg-dangerColor hover:text-grayColor;
+}
+
+.success {
+  @apply bg-successColor hover:text-grayColor;
+}
+
+.warning {
+  @apply bg-warnningColor hover:text-grayColor;
+}
+
+.btnText {
+  @apply flex flex-row  justify-center items-center text-center font-archivo;
+}
+
+.label {
+  @apply mr-1;
+}
+
+.btnIcon {
+  @apply relative w-5 h-5;
+}
+
+.iconTcon {
+  @apply text-lg;
+}
