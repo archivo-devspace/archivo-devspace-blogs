@@ -62,45 +62,49 @@ export default function Home() {
     return (
       <div>
         {type === "h2" && (
-          <h2 className="h2Text font-walone flex justify-center ">
+          <h2 className="h2Text font-walone flex justify-center text-secondaryTextColor">
             {getBlogBodyHelper(type, value)}
           </h2>
         )}
 
         {type === "h4" && (
-          <h4 className="h4Text font-walone py-2 mt-6">
+          <h4 className="h4Text font-walone py-2 mt-6 text-secondaryTextColor">
             {getBlogBodyHelper(type, value)}
           </h4>
         )}
 
         {type === "p" && (
-          <div className="text-md py-2 text-justify font-walone">
+          <div className="text-md py-2 text-start font-walone text-secondaryTextColor">
             {getBlogBodyHelper(type, value)}
           </div>
         )}
 
         {type === "span" && (
-          <span className="font-walone text-md">
+          <span className="font-walone text-md text-secondaryTextColor">
             {getBlogBodyHelper(type, value)}
           </span>
         )}
 
         {type === "b" && (
-          <b className="font-walone">{getBlogBodyHelper(type, value)}</b>
+          <b className="font-walone text-secondaryTextColor">
+            {getBlogBodyHelper(type, value)}
+          </b>
         )}
 
         {type === "i" && (
-          <i className="font-walone">{getBlogBodyHelper(type, value)}</i>
+          <i className="font-walone text-secondaryTextColor">
+            {getBlogBodyHelper(type, value)}
+          </i>
         )}
 
         {type === "u" && (
-          <u className="font-walone text-sm">
+          <u className="font-walone text-sm text-secondaryTextColor">
             {getBlogBodyHelper(type, value)}
           </u>
         )}
 
         {type === "comparison" && (
-          <div className="bg-tertiaryColor font-walone shadow-md mb-5">
+          <div className="bg-tertiaryColor text-secondaryTextColor font-walone shadow-md mb-5">
             {getBlogBodyHelper(type, value)}
           </div>
         )}
@@ -120,7 +124,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex text-primaryTextColor pr-[10px] sm:pr-20 h-20 pt-6">
+        <div className="flex text-secondaryTextColor pr-[10px] sm:pr-20 h-20 pt-6">
           <Link href={"#"} className="font-archivo">
             Blogs
           </Link>
@@ -134,7 +138,7 @@ export default function Home() {
         </div>
         {blog.mainTitle && (
           <div className="flex justify-center w-full">
-            <h1 className=" text-lg lg:text-2xl font-archivo">
+            <h1 className=" text-lg lg:text-2xl font-archivo text-secondaryTextColor">
               {blog.mainTitle}
             </h1>
           </div>
