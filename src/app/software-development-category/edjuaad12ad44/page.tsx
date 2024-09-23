@@ -15,7 +15,7 @@ export default function Home() {
 
   const handleRedirect = () => {
     window.open(
-      "https://www.facebook.com/profile.php?id=61563675035436&mibextid=kFxxJD",
+      "https://www.facebook.com/profile.php?id=61563675035436",
       "_blank"
     );
   };
